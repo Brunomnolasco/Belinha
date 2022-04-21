@@ -1,0 +1,743 @@
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;500;600;700&display=swap');
+html
+{
+    scroll-behavior: smooth;
+}
+:root
+{
+    --corPrincipal: #FEDEB7;    
+    --corPrincipal2: #fae6ce;    
+    --cor2: #f7b765;    
+}
+*
+{
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+    font-family: 'Quicksand', sans-serif;
+    text-decoration: none;
+    list-style: none;
+}
+::-webkit-scrollbar
+{
+    width: 5px;
+    background-color: #00000000;
+}
+
+::-webkit-scrollbar-thumb
+{
+    border-radius: 10px;
+    background: linear-gradient(to bottom, transparent,var(--corPrincipal));
+}
+
+::-webkit-scrollbar-thumb:hover
+{
+    background: linear-gradient(to bottom, transparent,var(--corPrincipal2));
+}
+
+body
+{
+    background-color: #0b0b0b;
+    background-image: url(assets/pata.png);
+    background-attachment: fixed;
+    background-size: 600px;
+}
+header
+{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    padding: 5px 50px;
+    background-color: var(--corPrincipal);
+}
+header ul
+{
+    display: flex;
+    align-items: center;
+    margin-top: 5px;    
+}
+header ul li.sm
+{
+    margin-top: 5px;
+}
+header ul li
+{
+    margin: 0px 30px;
+}
+header ul li a
+{
+    color: #000000e3;
+    font-weight: 600;
+    transition: .5s
+}
+header ul li a:hover
+{
+    color: var(--cor2);
+}
+header img
+{
+    position: relative;
+    max-width: 120px;
+    cursor: pointer;
+}
+
+/* ____________________________________________________ */
+
+#subir
+{
+    position: fixed;
+    bottom: 2px;
+    right: 10px;
+    transition: .4s;
+}
+#subir:hover
+{
+    transform: translateY(-10px);
+}
+#subir img
+{
+    width: 40px;
+}
+.sessao1
+{
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    background-color: var(--corPrincipal);
+}
+.content1
+{
+    display: flex;
+    align-items: center;
+    max-width: 1300px;
+    padding: 0px 20px;
+}
+.txtContent h1
+{
+    font-size: 6em;
+    max-width: 75%;
+    line-height: 100px;
+}
+.todosp
+{
+    max-width: 500px;
+    font-weight: 500;
+    margin-top: 30px;
+    text-align: justify;
+}
+.txtContent .button 
+{   
+    display: inline-block;
+    margin-top: 25px;
+    background-color: #000;
+    padding: 5px 10px;
+    border-radius: 15px;
+    color: var(--corPrincipal);
+    font-weight: 600;
+    border: 1px solid var(--corPrincipal);
+    transition: .8s
+}
+.txtContent .button:hover
+{
+    color: #000;
+    background-color:var(--corPrincipal);
+    border: 1px solid #000;
+}
+
+/* ____________________________________________________ */
+
+main h1
+{
+    text-align: center;
+    color: var(--corPrincipal);
+    margin-top: 200px;
+    text-transform: uppercase;
+    font-size: 4em;
+    font-weight: lighter;
+}
+.sessao2
+{
+    margin-top: 200px;
+    max-width: 1300px;
+    margin: auto;
+    margin-top: 100px;
+    padding: 0px 20px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+.sessao2 .txtContent2 h2
+{
+    color: var(--corPrincipal);
+    text-transform: uppercase;
+    font-weight: 600;
+    font-size: 3em;
+}
+.sessao2 .imgContent2 img
+{
+    max-width: 500px;
+}
+.sessao2 .txtContent2 p
+{
+    max-width: 500px;
+    color: var(--corPrincipal2); 
+    margin-top: 20px;   
+    font-size: 20px;
+    text-align: justify;
+}
+.sessao2 .button2
+{
+    display: inline-block;
+    margin-top: 25px;
+    background-color: var(--corPrincipal);
+    padding: 5px 10px;
+    border-radius: 15px;
+    color: #000;
+    font-weight: 600;
+    border: 1px solid var(--corPrincipal);
+    transition: .8s       
+}
+.sessao2 .button2:hover
+{
+    color: var(--corPrincipal);
+    background-color:#222020;
+    border: 1px solid var(--corPrincipal);
+}
+
+/* ____________________________________________________ */
+
+.slider
+{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 50px;
+    width: 100%;
+    background-color: var(--corPrincipal);
+    background-size: 600px;
+    background-attachment: fixed;
+    padding: 20px 0px;
+    transition: 1s;
+}
+.slider:hover
+{
+    background-color: #0b0b0b;
+    background-image: url(assets/pata.png);
+}
+.slider img
+{
+    margin: 0px 10px;
+    border-radius: 15px;
+    box-shadow: 1px 1px 10px black;
+    transition: .7s;
+    cursor:grabbing;
+}
+.slider img:hover
+{
+    transform:scale(1.1);
+}
+footer
+{
+    margin-top: 20px;
+    width: 100%;
+    padding: 10px 20px;
+    background-color: var(--cor2);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+}
+footer p 
+{
+    text-align: justify;
+    font-weight: bold;
+}
+footer p span
+{
+    transition: .3s all ;
+}
+footer p span:hover
+{
+    color: black;
+    border-radius: 5px;
+    padding: 0px 5px;
+    cursor: pointer;
+}
+
+/* ____________________________________________________ */
+
+@media screen and (max-width:1450px)
+{
+    header ul li
+    {
+        margin: 0px 20px;
+    }    
+
+    .slider img
+    {
+        max-width: 300px;
+    }
+}
+
+/* ____________________________________________________ */
+
+@media screen and (max-width:1295px)
+{
+    header ul li
+    {
+        margin: 0px 15px;
+    } 
+    
+    #segundoH1
+    {
+        font-size: 3.5em;
+    }
+
+    .slider img
+    {
+        max-width: 250px;
+    }        
+
+    footer p
+    {
+        font-size: 12px;
+    }
+
+}
+
+/* ____________________________________________________ */
+
+@media screen and (max-width:1140px)
+{
+    header ul li
+    {
+        margin: 0px 10px;
+    }
+    .sessao2 .imgContent2 img
+    {
+        max-width: 400px;
+    }
+    
+    #segundoH1
+    {
+        margin-top: 100px;
+        padding: 0px 20px;
+    }
+
+    .slider img
+    {
+        max-width: 230px;
+    }   
+}
+
+/* ____________________________________________________ */
+
+@media screen and (max-width:1060px)
+{
+    header ul li
+    {
+        font-size: 14px;
+    }
+    header ul li.sm img
+    {
+        transform: scale(.8);
+    }
+    .sessao2 .imgContent2 img
+    {
+        max-width: 350px;
+    }
+    .sessao2 .txtContent2 h2
+    {
+        font-size: 2.5em;       
+    }
+    .sessao2 .txtContent2 p
+    {
+        font-size: 18px;       
+    }
+    #segundoH1
+    {
+        font-size: 3em;
+    }
+    .slider img
+    {
+        max-width: 220px;
+    }
+}
+
+/* ____________________________________________________ */
+
+@media screen and (max-width:990px)
+{
+    .logo img
+    {
+        max-width: 100px;        
+    }
+
+    header ul li
+    {
+        font-size: 13.5px;
+    }    
+
+    .txtContent h1
+    {
+        line-height: 1;
+        font-size: 5em;
+    }
+
+    .txtContent p
+    {
+        margin-top: 10px;
+    }
+
+    .sessao2 .txtContent2 h2
+    {
+        font-size: 2em;       
+    }
+
+    .sessao2 .txtContent2 p
+    {
+        font-size: 16px;       
+    }
+
+    .sessao2 .imgContent2 img
+    {
+        max-width: 300px;
+    }
+    .slider img
+    {
+        max-width: 200px;
+    }
+}
+
+/* ____________________________________________________ */
+
+@media screen and (max-width:950px)
+{
+    .logo img
+    {
+        max-width: 80px;        
+    }
+
+    header ul li
+    {
+        font-size: 13px;
+    } 
+    
+    header ul li.sm img
+    {
+        transform: scale(.6);
+    }
+
+    .txtContent h1
+    {
+        line-height: 1;
+        font-size: 4.5em;
+    }
+    
+    .content1 img
+    {
+        max-width: 350px;
+    }
+
+    .slider img
+    {
+        max-width: 190px;
+    }
+}
+
+/* ____________________________________________________ */
+
+@media screen and (max-width:905px)
+{
+    header ul li
+    {
+        font-size: 12px;
+    }  
+
+    .txtContent h1
+    {
+        line-height: 1;
+        font-size: 4em;
+    }
+
+    .content1 img
+    {
+        max-width: 300px;
+    }
+
+    .sessao2 .imgContent2 img
+    {
+        max-width: 250px;
+    }
+         
+    #segundoH1
+    {
+        font-size: 2.5em;
+    }
+}
+
+/* ____________________________________________________ */
+
+@media screen and (max-width:870px)
+{
+
+    header
+    {
+        justify-content: space-between;
+        padding: 0px 10px;
+    }
+    header ul 
+    {
+        display: none;                          
+    }
+
+    .txtContent h1
+    {
+        line-height: 1;
+    }
+
+    .sessao2 .imgContent2 img
+    {
+        max-width: 230px;
+    }
+
+    .menu
+    {
+        position: absolute;
+        width: 30px;
+        height: 30px;
+        top: 0px;
+        right: 0px;
+        margin: 5px;
+        background-image: url(assets/menu.png);
+        background-repeat: no-repeat;
+        background-size: 30px;
+        background-position: center;  
+        filter: invert();  
+        cursor: pointer;
+    }
+    .menu.active
+    {
+        background: url(assets/close.png) no-repeat;
+        background-position: center;
+        background-size: 20px;
+        z-index: 2;
+        position: fixed;         
+    }
+    .navegacao.active
+    {   
+        position: fixed;
+        top: 0;
+        right: 0;
+        margin: 0px;
+        width: 50%;
+        height: 100%;
+        display: flex;
+        align-items: center;
+        flex-direction: column-reverse;
+        justify-content: center;
+        background-color: var(--corPrincipal);
+        background-image: url(assets/pata2.png);
+        background-size: 450px;
+        background-position: cover;
+        z-index: 1;
+        border: 1px solid black;
+        border-top-left-radius: 10px;
+        border-bottom-left-radius: 10px;
+    }
+    header ul li a
+    {     
+       font-size: 17px;
+       font-weight: bold;
+       color: #222020;
+       line-height: 2;
+    }
+    .slider img
+    {
+        max-width: 160px;
+    }
+}
+
+/* ____________________________________________________ */
+
+@media screen and (max-width:800px)
+{
+    .txtContent h1
+    {
+        font-size: 3.5em;
+    }     
+    .sessao2 .imgContent2 img
+    {
+        max-width: 200px;
+    }
+    #shortbelinha
+    {
+        max-width: 150px;
+    }
+    .slider img
+    {
+        max-width: 150px;
+    }
+}
+
+/* ____________________________________________________ */
+
+@media screen and (max-width:750px)
+{
+    .content1
+    {
+        flex-direction: column;
+    } 
+    
+    #belinha2
+    {
+        flex-direction: column-reverse;
+    }
+
+    #belinha4
+    {
+        flex-direction: column-reverse;
+    }
+
+    .txtContent h1
+    {
+        margin-top: 50px;
+        font-size: 4em;
+    }
+
+    .txtContent p
+    {
+        margin-top: 30px;
+    }
+
+    .sessao2
+    {
+        flex-direction: column;
+    }
+
+    .sessao2 .imgContent2 img
+    {
+        position: relative;
+        max-width: 400px;
+        margin-top: 50px;
+    }
+
+    #shortbelinha
+    {
+        position: relative;
+        max-width: 400px;
+        margin-top: 50px;
+    }
+
+    .slider
+    {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+    }
+
+    .slider img
+    {
+        margin-top: 20px;
+        max-width: 400px;    
+    }
+}
+
+/* ____________________________________________________ */
+
+@media screen and (max-width:720px)
+{
+    .slider img
+    {
+        max-width: 300px; ;
+    }
+}
+
+/* ____________________________________________________ */
+
+@media screen and (max-width:650px)
+{
+    .slider img
+    {
+        max-width: 280px; ;
+    }
+}
+
+/* ____________________________________________________ */
+
+@media screen and (max-width:610px)
+{
+    .slider img
+    {
+        max-width: 240px;
+    }
+}
+
+/* ____________________________________________________ */
+
+@media screen and (max-width:545px)
+{
+    .slider img
+    {
+        max-width: 340px;
+    }
+}
+
+/* ____________________________________________________ */
+
+@media screen and (max-width:415px)
+{
+
+    header ul li a
+    {
+        font-size: 14px;
+    }
+
+    .txtContent h1 
+    {
+        font-size: 3em;
+    }
+
+    .content1 img
+    {
+        max-width: 250px;
+    }
+    .sessao2 .imgContent2 img
+    {
+        max-width: 300px;
+    }    
+    .slider img
+    {
+        max-width: 300px;
+    }
+
+}
+
+/* ____________________________________________________ */
+
+@media screen and (max-width:335px)
+{
+
+    header ul li a
+    {
+        font-size: 12px;
+    }
+
+    .sessao2 .imgContent2 img
+    {
+        max-width: 200px;
+    }    
+
+    #shortbelinha
+    {
+        max-width: 200px;
+    }
+
+    .slider img
+    {
+        max-width: 250px;
+    }
+}
+
+/* ____________________________________________________ */
